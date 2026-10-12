@@ -1,0 +1,1993 @@
+{
+ "setups": {
+  "labels_fast": "two questions over text labels, no digits shown (weekly_labels.py), fast mode"
+ },
+ "results": [
+  {
+   "case": "01 everything on target",
+   "setup": "labels_fast",
+   "seconds": 5.7,
+   "calls": 2,
+   "text": "G maintained a steady pace throughout the week, with steps, calories, and protein all holding consistent and right at their targets. Steps and calories showed remarkable consistency from day to day, while protein gradually rose, staying just above the goal. The early evening emerged as the most active time, aligning with steady calorie intake and consistent movement patterns.\n\n1. Continue walking for 30 minutes in the early evening to maintain the most active time of day and support steady calorie burn.  \n2. Add a protein shake right after the evening walk to keep protein intake gradually rising without overdoing it.  \n3. Keep the same four workout sessions throughout the week to preserve the steady rhythm and ensure consistency in movement and calorie tracking.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [378, 392]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "02 steps slightly below",
+   "setup": "labels_fast",
+   "seconds": 4.3,
+   "calls": 2,
+   "text": "Steps remained a little below the goal, falling gradually through the week but staying fairly consistent from day to day, while calories stayed right on target, holding steady and very consistent throughout. Protein hit the mark, just above the goal, and rose gradually with the week, also showing very consistent adherence. The steady pattern of workouts and consistent calorie intake suggests a reliable routine, with the early evening being the most active time of day.\n\n1. Add a 20-minute brisk walk during the early evening, right after the most active time of day, to boost step count without disrupting the existing routine.  \n2. Set a reminder to take 10 minutes of light movement, like stretching or a short walk, during the mid-morning hours to increase overall activity.  \n3. Wear a fitness tracker with step goals and check it twice daily—once in the morning and once in the late afternoon—to maintain awareness and motivation.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [472, 465]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "03 steps far below",
+   "setup": "labels_fast",
+   "seconds": 4.1,
+   "calls": 2,
+   "text": "Steps remained far below the goal, falling quickly through the week and showing very erratic progress from day to day, while calories stayed right on target with steady consistency throughout. Protein also met the goal, holding steady and remaining just above the target each day. The consistency in calorie intake contrasted with the erratic step count, and the early evening activity aligns with the times when calories were most consistently met.\n\n1. Start a 20-minute brisk walk right after dinner every night to boost steps during the early evening when activity is already high.  \n2. Set a 10-minute timer on your phone to do light stretching or bodyweight exercises during your lunch break to add consistent movement throughout the day.  \n3. Wear a fitness tracker to the bathroom and track steps taken there, aiming for at least 50 steps each time to make small, frequent contributions to your daily total.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [449, 463]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "04 protein slightly below",
+   "setup": "labels_fast",
+   "seconds": 4.0,
+   "calls": 2,
+   "text": "Steps, calories, and protein all showed strong consistency throughout the week, with steps and calories hitting the target and staying steady, while protein remained slightly below but consistent as well. The steady routine of four workouts supported the calorie consistency, and the early evening activity peak aligned with the steady calorie intake, suggesting a well-established rhythm. The slight dip in protein intake, though consistent, may reflect a pattern that could be explored further.\n\n1. Add a protein shake immediately after each evening workout to boost intake during the early evening when activity peaks.  \n2. Have a high-protein snack, like Greek yogurt or a chicken salad, as the first meal of the day to establish a strong start to the protein intake.  \n3. Keep a small container of protein powder on the counter to make it easy to grab a quick shake between meals or before bed.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [496, 401]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "05 protein far below",
+   "setup": "labels_fast",
+   "seconds": 4.6,
+   "calls": 2,
+   "text": "Steps and calories remained consistently on target throughout the week, with steps holding steady and calories showing a gradual rise. Protein intake, however, fell significantly below the goal, dropping quickly and with notable variability from day to day. The consistency in calorie intake paired with a heavy workout schedule suggests a strong foundation, yet the lack of protein adherence highlights a potential gap between activity levels and nutritional support. The early evening peak in activity may have influenced calorie consistency but didn’t compensate for the low protein consumption.\n\n1. Eat a high-protein snack, like Greek yogurt or a protein bar, within 30 minutes after each workout session to boost intake during the early evening when activity peaks.  \n2. Have a protein-rich breakfast, such as eggs or a smoothie with whey protein, every morning to establish a consistent baseline and prevent daily fluctuations.  \n3. Keep a protein shake or pre-prepped chicken breast in the fridge for a quick, easy option during lunch to ensure regular intake throughout the day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [598, 487]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "06 steps and protein both below",
+   "setup": "labels_fast",
+   "seconds": 4.4,
+   "calls": 2,
+   "text": "Steps remained well below the goal, falling quickly through the week and showing very erratic progress from day to day, while calories stayed clearly over the target, rising gradually and being quite variable. Protein also stayed well below the goal, dropping quickly and fluctuating significantly each day. There seems to be a pattern where the early evening was the most active time, yet this didn't translate into consistent adherence to calorie or protein targets, suggesting a disconnect between activity levels and dietary consistency.\n\n1. Start each morning with a 20-minute brisk walk to boost steps and set a consistent activity pattern before the day begins.  \n2. Have a high-protein snack, like a Greek yogurt with nuts, right after the evening workout to help meet protein goals and stabilize hunger.  \n3. Track calorie intake using a food scale and log meals immediately after eating, especially during the early evening when most activity occurs, to ensure better alignment with targets.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [541, 458]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "07 calories well over target",
+   "setup": "labels_fast",
+   "seconds": 5.8,
+   "calls": 3,
+   "text": "Steps remained right at the goal, just above it, holding steady through the week with fairly consistent daily activity. Calories, however, stayed far over the target, rising quickly through the week while remaining fairly consistent each day. Protein hit right at the goal, just above it, with a gradual rise and very consistent intake throughout. The early evening emerged as the most active time of day, aligning with the steady pattern of workouts and the consistent yet over-target calorie consumption.\n\n1. Implement a 30-minute walk in the early evening to balance out the high calorie intake during that time.  \n2. Have a protein shake immediately after each workout to maintain the consistent protein intake while supporting muscle recovery.  \n3. Replace one high-calorie snack with a low-calorie, high-volume option like a salad or vegetable sticks in the late afternoon.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [506, 371]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "08 calories far under target",
+   "setup": "labels_fast",
+   "seconds": 4.4,
+   "calls": 2,
+   "text": "Steps remained well above the goal, holding steady through the week with very consistent daily performance, while calories and protein both fell far below their targets, dropping quickly as the week progressed and showing fairly consistent patterns. The steady steps contrast with the declining calorie and protein intake, suggesting a possible shift in focus or energy management. The early evening emerged as the most active time of day, which may influence eating patterns and overall adherence to nutritional goals.\n\n1. Schedule a high-protein snack in the early evening to counteract the drop in protein intake, ensuring it's eaten within 30 minutes of finishing the most active time of day.  \n2. Have a calorie-controlled meal ready at lunchtime to prevent the rapid decline in calorie intake, aligning with the consistent eating pattern observed during the week.  \n3. Keep a protein-rich smoothie or shake available for the late afternoon to support intake without disrupting the early evening activity peak.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [519, 494]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "09 steps met but very erratic",
+   "setup": "labels_fast",
+   "seconds": 5.8,
+   "calls": 3,
+   "text": "Steps remained right at the goal, just above it, holding steady through the week but showing very erratic fluctuations from day to day. Calories landed right on the target, maintaining consistency throughout the week. Protein stayed right at the goal, just above it, with a gradual rise and very consistent intake. The steady weekly workouts and consistent calorie intake align with the early evening being the most active time of day.\n\n1. Continue eating a high-protein snack in the early evening to support the gradual rise in protein intake and align with the most active time of day.  \n2. Keep a consistent 30-minute walk in the early evening to maintain the steady workout routine and reinforce the most active time of day.  \n3. Log steps and calories right before bed to ensure consistency and reinforce the habit of tracking during the most active time of day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [435, 430]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "10 everything trending down",
+   "setup": "labels_fast",
+   "seconds": 4.3,
+   "calls": 2,
+   "text": "Steps, calories, and protein all hovered slightly below their targets throughout the week, with each showing a steady decline as the days progressed, though they remained fairly consistent from day to day. The slight underperformance in steps and protein seems to align with the steady calorie intake, suggesting a pattern of adherence to the plan despite the minor shortfall. The early evening emerged as the most active time of day, which may influence both movement and eating habits, potentially linking activity levels to when food is consumed.\n\n1. Add a 20-minute walk during the early evening to boost steps and align with the most active time of day.  \n2. Have a high-protein snack, like a Greek yogurt or a protein bar, right after the evening workout to support protein intake.  \n3. Keep a small container of nuts or a protein shake by the bedside to ensure a quick protein boost in the late evening if needed.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [549, 369]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "11 everything trending up",
+   "setup": "labels_fast",
+   "seconds": 4.1,
+   "calls": 2,
+   "text": "Steps, calories, and protein all stayed right at or just above their targets, showing a steady rise throughout the week with very consistent daily performance. The consistency in steps and calories aligns well with the steady workout schedule, while protein remained consistently high, supporting the active routine. The early evening was the most active time, which likely contributed to the steady calorie burn and step count during those hours.\n\n1. Continue walking for 30 minutes in the early evening to maintain the steady step count and support calorie burn during the most active time of day.  \n2. Keep eating a high-protein snack, like a handful of almonds or a protein bar, right after the evening workout to sustain muscle recovery and support the rising protein intake.  \n3. Stick to the four daily workout sessions, especially in the early evening, to keep the consistent energy expenditure and reinforce the active routine.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [447, 487]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "12 muscle gain, protein met, calories short",
+   "setup": "labels_fast",
+   "seconds": 5.5,
+   "calls": 3,
+   "text": "Steps remained right at the goal, just above it, holding steady through the week with very consistent daily performance. Calories fell clearly under the target, showing a gradual decline yet maintaining daily consistency. Protein hit right at the goal, just above it, and rose gradually throughout the week, aligning well with the increasing trend. The early evening emerged as the most active time of day, which may influence both calorie intake and overall energy expenditure.\n\n1. Increase calorie intake during early evening meals by adding a moderate-sized snack or extending meal portions to align with the target. 2. Schedule a short walk or light activity during the early evening to boost energy expenditure without overexertion. 3. Review and adjust calorie goals for the next week to ensure they are realistic and achievable based on current patterns.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [478, 381]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: ['Review and adjust calorie goals for the next week ']"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "13 maintenance, all within range",
+   "setup": "labels_fast",
+   "seconds": 4.0,
+   "calls": 2,
+   "text": "G maintained a steady and consistent routine throughout the week, with steps, calories, and protein all landing right at the target or just above it. Each metric held steady day to day, showing strong consistency in both activity and nutrition. The early evening emerged as the most active time of day, aligning with the steady calorie intake and protein consumption, suggesting a routine that supports both movement and nourishment.\n\n1. Continue walking for 30 minutes in the early evening to maintain the most active time of day and support steady calorie burn.  \n2. Have a high-protein snack, like a Greek yogurt with nuts, right after the evening walk to align protein intake with peak activity.  \n3. Keep a 15-minute stretching routine at the same time each day, preferably in the late afternoon, to preserve consistency in movement and recovery.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [433, 416]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "14 no workouts at all",
+   "setup": "labels_fast",
+   "seconds": 3.6,
+   "calls": 2,
+   "text": "Steps were a little below the goal but remained consistent throughout the week, while calories and protein stayed right on target with steady adherence. The consistency in calorie and protein intake suggests strong adherence to the plan, even without any workouts. The early evening was the most active time of day, which aligns with the steady calorie intake, showing a possible link between activity timing and dietary consistency.\n\n1. Start a 20-minute brisk walk right after dinner each night to boost steps without affecting calorie goals.  \n2. Set a reminder to take 10 minutes of light movement, like stretching or walking, during the early evening when most active.  \n3. Keep a step tracker visible during the early evening to maintain awareness and motivation.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [433, 334]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "15 six workouts",
+   "setup": "labels_fast",
+   "seconds": 4.2,
+   "calls": 2,
+   "text": "G's steps, calories, and protein all stayed right at or just above their targets, showing strong consistency throughout the week. Steps and protein were particularly steady, with protein even rising gradually, which aligns well with the heavy workout schedule. Calories remained on target every day, matching the consistent activity levels and suggesting good adherence to the plan. The early evening was the most active time, which likely supports the steady calorie and protein intake during those sessions.\n\n1. Continue taking a 30-minute walk right after dinner to maintain steady steps and support recovery from the evening workouts.  \n2. Have a high-protein snack, like a Greek yogurt with nuts, within 30 minutes of finishing each workout session to aid muscle repair.  \n3. Keep a water bottle by the bed and drink a full glass right before going to sleep to stay hydrated and support consistent protein absorption throughout the night.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [509, 432]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "16 no protein data this week",
+   "setup": "labels_fast",
+   "seconds": 5.2,
+   "calls": 3,
+   "text": "Steps remained a little below the goal but held steady through the week, showing fairly consistent effort each day. Calories landed right on target, staying very consistent from day to day, which suggests strong adherence to the plan. The early evening was the most active time of day, aligning with the steady calorie intake and consistent steps, indicating a reliable routine.\n\n1. Increase steps by taking a 15-minute walk right after dinner to capitalize on the most active time of day and boost daily movement.  \n2. Add a 10-minute stretching session in the early evening to enhance mobility and support consistent activity levels without affecting calorie goals.  \n3. Wear a fitness tracker during all waking hours to maintain awareness of step counts and ensure steps stay above the goal throughout the day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "no_claims_without_data",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [378, 433]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "17 steps exactly on goal",
+   "setup": "labels_fast",
+   "seconds": 4.5,
+   "calls": 2,
+   "text": "Steps, calories, and protein all showed steady performance throughout the week, with steps and calories remaining right on target and very consistent from day to day. Protein, while slightly below the goal, maintained a gradual decline without much variation. The consistency in steps and calories suggests strong adherence to the plan, while the steady workout schedule likely contributed to the stable calorie intake. The early evening activity peak may have influenced the timing of meals, supporting the consistent calorie and step patterns.\n\n1. Add a protein shake immediately after the early evening workout to boost intake and counteract the gradual decline.  \n2. Have a high-protein snack, like Greek yogurt or a chicken salad, as the first meal of the day to set a strong foundation for protein consumption.  \n3. Keep a protein-rich food, such as eggs or cottage cheese, by the bedside to ensure a small portion is eaten right before bed, supporting consistent intake throughout the day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [545, 449]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "18 protein just above target",
+   "setup": "labels_fast",
+   "seconds": 4.1,
+   "calls": 2,
+   "text": "Steps remained well below the goal, falling gradually through the week but staying fairly consistent from day to day, while calories stayed right on target, holding steady and very consistent throughout. Protein hit the mark, just above the goal, and rose gradually with the week, also showing very consistent intake. The steady pattern of workouts matched with the consistent calorie intake, though steps lagged, possibly influenced by the early evening being the most active time of day.\n\n1. Start walking for 20 minutes right after breakfast to boost morning steps and set a consistent active start to the day.  \n2. Take a 15-minute brisk walk during the early evening peak activity time to increase steps without disrupting the current workout schedule.  \n3. Wear a step tracker during all waking hours for the next two weeks to create a visual reminder and hold yourself accountable throughout the day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [489, 416]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "19 calorie goal never hit",
+   "setup": "labels_fast",
+   "seconds": 5.9,
+   "calls": 3,
+   "text": "Steps remained right at the goal, holding steady through the week with very consistent daily performance, while calories clearly exceeded the target, rising gradually but staying fairly consistent each day. Protein stayed right at the goal, matching the consistency of steps. The early evening emerged as the most active time of day, aligning with the steady pattern of workouts and the gradual climb in calorie intake.\n\n1. Adjust calorie intake by eating a smaller meal at lunchtime to bring daily totals closer to the target without disrupting the consistent pattern.  \n2. Incorporate a short walk or light stretching session in the early evening to manage the peak activity time and help balance calorie expenditure.  \n3. Keep protein intake consistent throughout the day, especially with a post-workout shake in the late afternoon to support recovery without adding extra calories.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": false,
+     "detail": "calories are clearly over the target — do not recommend eating more"
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [419, 464]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "20 calorie goal hit every day",
+   "setup": "labels_fast",
+   "seconds": 6.2,
+   "calls": 3,
+   "text": "Steps remained a little below the goal, falling gradually through the week but staying fairly consistent from day to day, while calories stayed right on target and held steady throughout. Protein hit the mark, just above the goal, and rose gradually with the week, showing very consistent intake. The steady pattern of workouts and consistent calorie intake suggests a reliable routine, with the early evening being the most active time of day.\n\n1. Add a 20-minute brisk walk during the early evening, the most active time of day, to boost step count and align with the steady routine.  \n2. Incorporate a 10-minute stretching session right after waking up to enhance mobility and set a proactive start to the day.  \n3. Keep protein intake consistent as it's already meeting the goal, focusing instead on maintaining the current pattern for optimal results.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [444, 410]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: [\"Keep protein intake consistent as it's already mee\"]"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  }
+ ]
+}

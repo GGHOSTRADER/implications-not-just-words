@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+# new runs go to evals/results/ too; commit them only on purpose
+evals/results/*.tmp

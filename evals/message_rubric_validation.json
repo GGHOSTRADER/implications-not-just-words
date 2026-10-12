@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "reader": "Claude (Opus 5.5) in the working session",
+  "rubric": "messages-v1.4 (2026-10-04)",
+  "method": "Three reading rounds. Round 1 read every flag on the first half of the tuning run (checklist v1.1); round 2 read every flag on the holdout run (v1.3); each false-positive pattern found was fixed, pinned by a test in tests/test_message_eval.py, and the version bumped. The final round read a fresh seeded sample (seed 11, up to 15 per item) of the flags v1.4 raises on every current answer (540 answers), and judged each flag right or wrong against the item's definition. Items with no flags in the final round have no precision figure.",
+  "items": {
+    "bt_workout_day_right": {"read": 15, "correct": 15, "precision": 1.0, "note": "all 'Rest day ...' written on a training day"},
+    "by_big_misses_mentioned": {"read": 15, "correct": 15, "precision": 1.0, "note": "each answer leaves out a 10%+ miss; the labels answers name only the first item of the to-do list"},
+    "cp_no_internal_codes": {"read": 10, "correct": 10, "precision": 1.0, "note": "'status 3' shown to the user"},
+    "cp_length": {"read": 10, "correct": 10, "precision": 1.0, "note": "the day's last check, 6-7 sentences: the labels answers repeat the weather lines at 23:59"},
+    "bt_covers_food_movement_workout": {"read": 7, "correct": 7, "precision": 1.0, "note": "a day with no workout plan: no word about training, only 'a quiet day'; borderline, counted as right"},
+    "cp_size_right": {"read": 4, "correct": 4, "precision": 1.0, "note": "a 55% calorie gap called 'slightly over' (or 'slightly under')"},
+    "cp_daily_budget_claim_true": {"read": 2, "correct": 2, "precision": 1.0, "note": "'200 kcal over your daily budget' at 15:00 with 1,700 of 3,000 kcal eaten"},
+    "cp_no_greeting_or_sign_off": {"read": 2, "correct": 2, "precision": 1.0, "note": "'just let me know, I'm here to help'"},
+    "by_length": {"read": 1, "correct": 1, "precision": 1.0, "note": "6 sentences"},
+    "by_no_wrong_praise": {"read": 1, "correct": 1, "precision": 1.0, "note": "'a solid start with steps' at 76% of the step goal"},
+    "cp_calorie_position_correct": {"read": 1, "correct": 1, "precision": 1.0, "note": "'being slightly under calories' 55% over plan"},
+    "cp_food_fits_the_day": {"read": 1, "correct": 1, "precision": 1.0, "note": "'consider a rice bowl or granola bar for calories' while over plan in a cut"}
+  },
+  "rounds": [
+    {"round": 1, "rubric": "messages-v1.1", "answers": "first half of the tuning run", "findings": [
+      "cp_outdoor_rule / bt_outdoor_rule: 26 flags, 1 right; the rest were mentions ('without stepping outside', 'outdoor walking isn't suitable, so stay in'). Fixed in v1.2: only suggestions count. The same naive keyword in the label designs' answer check redrafted correct answers; that check was fixed and its runs repeated.",
+      "by_no_lists_or_sign_off: 3 flags, 0 right ('great to see you hit your steps' read as 'see you'). Fixed in v1.2.",
+      "bt_no_repeated_numbers: 3 flags, 0 right ('20-30 minutes' is a proposal). Fixed in v1.2.",
+      "by_no_wrong_praise: 6 flags, 0 right ('make sure to hit your protein goal today' is advice, not praise). Fixed in v1.2.",
+      "bt_covers_food_movement_workout: 2 flags on a day without a plan whose note mentions the plan ('without a strict plan'). Fixed in v1.2/v1.3."
+    ]},
+    {"round": 2, "rubric": "messages-v1.3", "answers": "the holdout run", "findings": [
+      "cp_outdoor_rule: 1 flag, 0 right ('enjoy the light rain outside' has no movement). Fixed in v1.4.",
+      "cp_right_direction: 3 flags, 2 wrong ('the extra calories may have come from the oatmeal' describes the surplus); the third matched a description too, and the request it held ('consider a rice bowl') is caught by cp_food_fits_the_day. Fixed in v1.4: 'eat more' needs a request.",
+      "v1.3 itself came from round 1's tail: curly apostrophes ('isn’t') defeated every negation pattern."
+    ]}
+  ],
+  "not_measured": "Recall. Failures seen while reading that no item catches: 'a protein reduction of 5g' in a gain phase, 'aim for a -300 kcal target', 'add 8g of protein' as a fix for a large gap, and a workout day treated as recovery without the words 'rest day'."
+}

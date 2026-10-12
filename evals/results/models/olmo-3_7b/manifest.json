@@ -1,0 +1,20 @@
+﻿{
+    "model":  "olmo-3:7b",
+    "model_id":  "b8d4c92ac9c1",
+    "ollama":  "ollama version is 0.34.4",
+    "started":  "2026-10-05 15:05:29",
+    "code":  "55227b6+uncommitted",
+    "repeats":  3,
+    "weekly":  [
+                   "split_fast",
+                   "labels_fast",
+                   "labels6_fast"
+               ],
+    "messages":  [
+                     "checkpoint_numbers",
+                     "checkpoint_labels3",
+                     "briefing_numbers",
+                     "briefing_labels_noguard",
+                     "briefing_labels4"
+                 ]
+}

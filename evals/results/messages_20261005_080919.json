@@ -1,0 +1,3299 @@
+{
+ "setups": {
+  "briefing_labels4_noguard": "briefing labels v4: yesterday names every big miss in one sentence, biggest first; today as v3; no answer checks",
+  "briefing_labels4": "briefing labels v4 with its answer checks (every big miss named, at most five sentences, no 'nothing stood out')"
+ },
+ "fingerprints": {
+  "briefing_labels4_noguard": "094acd8cb454",
+  "briefing_labels4": "786a63e040c0"
+ },
+ "case_set": "incident",
+ "repeats": 3,
+ "started": "2026-10-05 08:09:26",
+ "code": "1b4af03+uncommitted",
+ "rubric": "messages-v1.7 (2026-10-05)",
+ "results": [
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 0,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 5.2,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest one, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on building strength and endurance with a mix of walking and movement-based exercises to match your plan."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4",
+   "repeat": 0,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.4,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest miss, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on movement and balance, helping to build strength and endurance naturally."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 0,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories, protein, and the workout. The routine is working, and I can see the progress. Keep up the great work.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without stepping outside. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4",
+   "repeat": 0,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.8,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You hit your calorie and protein targets, and the lower body workout went smoothly. The routine is keeping you on track for fat loss. Keep up the great work, G.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without stepping outside. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 0,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 3.2,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your protein intake and rest day.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a 15-minute walk around the block during your morning routine to add steps without overexerting. Rest days are for recovery, so use the time to stretch, hydrate, and prepare for the week ahead."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": false,
+     "detail": "Take a 15-minute walk around the block during your morning routine to add steps without overexerting"
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4",
+   "repeat": 0,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 4.4,
+   "calls": 3,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your recovery goals.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a short walk on the treadmill for 15 minutes to add steps without stepping outside. Rest days are for recovery, so use the time to stretch, hydrate, and prepare for the week ahead."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 0,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.8,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, and workout all went well yesterday. The routine is working smoothly and consistently. Keep up the great effort, and let’s make today another positive one.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 15-minute walk outdoors or on the treadmill to add some steps while enjoying the sunny weather. Today’s Push Day will focus on upper body strength, so make sure to warm up properly and stay hydrated throughout your session."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4",
+   "repeat": 0,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.5,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, the workout, and the weigh-in all went well. The routine is working smoothly and consistently. Keep up the great effort, G.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 20-minute walk outdoors or on the treadmill to add steps while enjoying the sunny weather. Today’s Push Day session will focus on upper body strength, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 0,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 3.3,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a smoothie with spinach, banana, and a scoop of protein powder, paired with a slice of whole-grain toast. Take a short walk through the mall or a covered area to add steps without stepping outside. Your lower body session today will focus on movement and mobility, keeping the intensity moderate to allow for recovery while still engaging the major muscle groups."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4",
+   "repeat": 0,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.6,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a banana with a handful of almonds and a cup of black coffee. Take a short walk through the mall or a covered area to add steps without stepping outside. Your lower body session today will focus on movement and recovery, keeping the intensity moderate to match the cool, windy weather."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 1,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.7,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest miss, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on movement that targets your legs and glutes, with a suggested duration of around 45 minutes."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4",
+   "repeat": 1,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.4,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest miss, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on movement and balance, helping to build strength and endurance naturally."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 1,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You hit your calorie and protein targets, and the lower body workout went smoothly. The routine is keeping you on track for fat loss. Keep up the great work, G.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without stepping outside. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4",
+   "repeat": 1,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You hit your calorie and protein targets, and the lower body workout went smoothly. The routine is keeping you on track for fat loss. Keep up the great work, G.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without being exposed to the heat. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 1,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your recovery goals.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a 15-minute walk around the block during your morning routine to add steps without overexerting. Rest days are for recovery, so use the time to stretch, hydrate, and prepare for the week ahead."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": false,
+     "detail": "Take a 15-minute walk around the block during your morning routine to add steps without overexerting"
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4",
+   "repeat": 1,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 4.4,
+   "calls": 3,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your protein intake and rest day.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a short walk on the treadmill for 15 minutes to add steps without stepping outside. Rest days are for recovery, so use the time to recharge and prepare for your next workout."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 1,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.5,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, the workout, and the weigh-in all went well. The routine is working smoothly and consistently. Keep up the great effort, G.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 20-minute walk outdoors or on the treadmill to add steps while enjoying the sunny weather. Today’s Push Day session will focus on upper body strength, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4",
+   "repeat": 1,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.7,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, the workout, and the weigh-in all went well. The routine is working smoothly and consistently. Keep up the great effort, and let’s make today another positive one.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 15-minute walk outdoors or on the treadmill to add some steps while enjoying the sunny weather. Today’s Push Day will focus on upper body strength, so make sure to warm up properly and stay hydrated throughout your session."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 1,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.7,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a banana with a handful of almonds and a cup of black coffee. Take a short walk through the mall or a covered area to add steps without stepping outside. Your lower body session today will focus on movement and recovery, keeping the intensity moderate to match the cool, windy weather."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4",
+   "repeat": 1,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.6,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a banana with a handful of almonds and a cup of black coffee. Take a short walk through the mall or a covered area to add steps without stepping outside. Your lower body session today will focus on movement and recovery, keeping the intensity moderate to match the cool, windy weather."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 2,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.4,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest miss, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on movement and balance, helping to build strength and endurance naturally."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I01 rain, training day (Lower body), steps raised",
+   "setup": "briefing_labels4",
+   "repeat": 2,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.5,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The workout and weigh-in went well. Big misses include steps falling short and calories coming in over the target. To fix the biggest miss, focus on moving more today to meet the higher step goal.",
+    "today": "A light breakfast of rice with a boiled egg and some fruit will keep you fueled without overdoing it. Take a short walk through the mall or a covered area during your lunch break to add steps. Your lower body session today will focus on movement and balance, helping to build strength and endurance naturally."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 2,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.8,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You hit your calorie and protein targets, and the lower body workout went smoothly. The routine is keeping you on track for fat loss. Keep up the great work, G.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without being exposed to the heat. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I02 very hot, training day",
+   "setup": "briefing_labels4",
+   "repeat": 2,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You hit your calorie and protein targets, and the lower body workout went smoothly. The routine is keeping you on track for fat loss. Keep up the great work, G.",
+    "today": "Start your morning with a simple omelet made with eggs, a slice of whole-grain toast, and a glass of water to keep you energized without overdoing calories. Take a short walk through the mall or a covered area during your lunch break to add some steps without being exposed to the heat. Today’s upper body session will focus on building strength and endurance, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": false,
+     "detail": "greeting=True, name used 2x"
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 2,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.9,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your protein intake and rest day.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a 15-minute walk around the block during your morning routine to add steps without overexerting. Rest days are for recovery, so use the time to stretch, hydrate, and prepare for the week ahead."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": false,
+     "detail": "Take a 15-minute walk around the block during your morning routine to add steps without overexerting"
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I03 weather unknown, rest day, steps far behind",
+   "setup": "briefing_labels4",
+   "repeat": 2,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 4.4,
+   "calls": 3,
+   "answer": {
+    "yesterday": "Good morning, G. You did well with calories and the weigh-in. Your biggest miss was steps, which were about half short—try to move more throughout the day to stay on track. Keep up the good work with your protein intake and rest day.",
+    "today": "Start your morning with a bowl of yogurt topped with a handful of berries and a sprinkle of granola for a light, satisfying breakfast. Take a short walk on the treadmill for 15 minutes to add steps without stepping outside. Rest days are for recovery, so use the time to recharge and prepare for your next workout."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_rest_day_respected",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 2,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.7,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, the workout, and the weigh-in all went well. The routine is working smoothly and consistently. Keep up the great effort, and let’s make today another positive one.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 20-minute walk outdoors or on the treadmill to add steps while enjoying the sunny weather. Today’s Push Day will focus on upper body strength, so make sure to warm up properly and stay hydrated throughout your session."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I04 clear and sunny, training day",
+   "setup": "briefing_labels4",
+   "repeat": 2,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.7,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. Your steps, calories, protein, the workout, and the weigh-in all went well. The routine is working smoothly and consistently. Keep up the great effort, and let’s make today another positive one.",
+    "today": "Start your morning with a bowl of oats topped with a handful of nuts and a splash of milk for a light, satisfying breakfast. Take a 20-minute walk outdoors or on the treadmill to add steps while enjoying the sunny weather. Today’s Push Day session will focus on upper body strength, so make sure to warm up properly and stay hydrated."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4_noguard",
+   "repeat": 2,
+   "fingerprint": "094acd8cb454",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.6,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a banana with a handful of almonds and a cup of black coffee. Take a short walk through the mall or a covered area to add steps without stepping outside. Your lower body session today will focus on movement and mobility, keeping it light to match the overcast weather and wind."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "message": "briefing",
+   "case": "I05 strong wind, training day, steps lowered",
+   "setup": "briefing_labels4",
+   "repeat": 2,
+   "fingerprint": "786a63e040c0",
+   "rubric": "messages-v1.7 (2026-10-05)",
+   "seconds": 2.6,
+   "calls": 2,
+   "answer": {
+    "yesterday": "Good morning, G. The weigh-in went well. Calories came in under the target, so today’s step goal is a little lower—focus on hitting that to support your muscle gain phase. Make sure to log your workout to track progress and keep recovery on track.",
+    "today": "A light breakfast could be a banana with a handful of almonds and a cup of black coffee. Take a short walk through the mall or a covered area to add steps without going outside. Your lower body session today will focus on movement and recovery, keeping the intensity moderate to match the cool, windy weather."
+   },
+   "error": "",
+   "items": [
+    {
+     "kind": "instruction",
+     "id": "by_greeting_and_name_once",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "by_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_no_wrong_praise",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "by_workout_weighin_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "by_big_misses_mentioned",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_greeting_or_name",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_length",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_repeated_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "bt_workout_day_right",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "bt_no_lists_or_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_covers_food_movement_workout",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_outdoor_rule",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_steps_are_walking",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "semantic",
+     "id": "bt_no_invented_workout",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  }
+ ]
+}

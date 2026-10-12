@@ -1,0 +1,1090 @@
+{
+ "setups": {
+  "labels4_fast": "labels v4: v3's meaning, but each question sees only its own view (meaning inline per metric for the observations; priorities, fixes and constraints for the recommendations); fast mode"
+ },
+ "fingerprints": {
+  "labels4_fast": "693eb207bcfa"
+ },
+ "case_set": "holdout",
+ "repeats": 1,
+ "started": "2026-10-04 03:59:37",
+ "code": "1b4af03+uncommitted",
+ "results": [
+  {
+   "case": "H01 only calories a bit over",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 7.4,
+   "calls": 2,
+   "text": "The main issue this week is calories with a moderate gap, which means weight is likely to creep up. Steps were comfortably past the goal and held steady. Calories were consistently over the target, creating a gap that didn't shrink throughout the week. Protein met the goal and continued to rise. Workouts remained consistent with four sessions each week. Movement was fine, so the gap is entirely on the food side.\n\n1. Trim your evening snack by swapping it for a piece of fruit or a small handful of nuts to reduce calorie intake without sacrificing satisfaction.  \n2. Keep a small portion of your favorite high-calorie food in a separate container and only use it once per day, ideally after your main meal to avoid overeating.  \n3. Drink a glass of water 30 minutes before meals to help control portion sizes and reduce the likelihood of eating more than intended.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [415, 451]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H02 steps far above, protein a bit low",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 5.0,
+   "calls": 2,
+   "text": "The main issue this week is protein, with a moderate gap as the user consumed slightly less than needed, drifting further from the target as the week progressed. Steps were comfortably past the goal and still rising, while calories landed close to the target on most days. Workouts remained steady with three sessions each week. The connection between metrics highlights that there is enough food but not enough protein, so the fix lies in swapping choices rather than increasing overall intake.\n\n1. Start each morning with a high-protein breakfast, like eggs or Greek yogurt, to kickstart protein intake.  \n2. Swap one midday meal for a protein-rich option, such as grilled chicken or a tofu stir-fry, to boost intake without adding more food.  \n3. Have a protein shake or a handful of nuts as an afternoon snack to maintain levels throughout the day.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [495, 355]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H03 protein far above, steps short",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 8.0,
+   "calls": 4,
+   "text": "The main issue this week was steps, which were significantly below the goal, with a large gap that grew as the week progressed. Calories remained close to the target most days, showing consistency. Protein was well above the goal and continued to rise. Workouts were frequent, with five sessions, indicating a strong commitment to training. No connections between metrics were noted.\n\n1. Start walking for 20 minutes in the early evening, right after your main meal, to boost daily steps and support appetite. 2. Keep protein and calories as they are, focusing on consistency rather than changes. 3. Continue with your five workout sessions weekly, maintaining the strong training commitment you've already established.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [383, 334]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: ['Keep protein and calories as they are, focusing on']"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H04 cutting too hard, nothing trained",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 8.0,
+   "calls": 3,
+   "text": "The main issue this week is calories, with a very large gap that risks losing muscle and running out of energy. Steps were also well short of the goal, a very large gap that drifted further as the week went on, and the average hides some much quieter days. Protein was clearly under the goal, a very large gap that drifted further as the week went on, putting muscle at risk. No workouts were done at all, making it harder to keep muscle while dieting. Protein is short mostly because total food is short, so eating more overall helps both.\n\n1. Have a high-protein snack, like a Greek yogurt with berries, at breakfast to boost calories and protein intake. 2. Add a mid-afternoon protein shake with a banana and peanut butter to increase both calories and protein without overdoing it. 3. Schedule a short 20-minute strength training session in the early evening, three times this week, to maintain muscle while dieting.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [540, 378]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": false,
+     "detail": "not addressed: ['steps']"
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "no_workouts_is_noticed_and_addressed",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H05 calories on average but erratic",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 6.1,
+   "calls": 3,
+   "text": "The main issue this week was steps, which were just short of the goal, creating a moderate gap that likely reduced calorie burn and the overall deficit. Calories were on target only on average, with some days much heavier and others much lighter, while protein met the goal consistently. Workouts remained steady with four sessions each week. Calories landed close to the target on only a few days, which is worth noting.\n\n1. Add a 20-minute walk in the early evening to boost steps and close the gap without adding extra calories. 2. Keep protein intake consistent as it already meets the goal. 3. Focus on maintaining steady calorie intake across the week to avoid heavy days that may throw off the deficit.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [421, 286]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: ['Keep protein intake consistent as it already meets', 'Focus on maintaining steady calorie intake across ']"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H06 seven workouts, steps short, calories low",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 5.1,
+   "calls": 2,
+   "text": "The main issue this week is calories, with a moderate gap that slowed muscle gain. Steps were well short of the goal, drifting further as the week went on, which affects health and appetite more than muscle growth. Protein was slightly under target, limiting recovery and growth. Workouts were heavy with seven sessions, but the combination of too little food and too much activity created a challenge. Eating more overall would help address both the calorie and protein gaps.\n\n1. Add a protein shake or a handful of nuts as a mid-morning snack to boost calories and protein intake.  \n2. Once calories are back on target, take a 20-minute walk during lunch break to increase steps without overexerting.  \n3. Include a protein-rich food like grilled chicken or tofu in one of your evening meals to meet the slightly lower protein target.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [476, 358]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H07 no step data this week",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 7.3,
+   "calls": 4,
+   "text": "The main point is a steady week with everything on track. Calories landed close to the target on about half the days. Protein met the goal and continued to rise. Workouts remained consistent with three sessions each week. No additional connections between metrics were noted.\n\n1. Continue eating a high-protein meal at lunchtime to support muscle maintenance and keep hunger in check.  \n2. Stick to your three weekly workout sessions by scheduling them at the same time every weekday afternoon.  \n3. Avoid late-night snacking by having a light snack, like a banana, right after your evening workout.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [275, 322]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H08 maintenance slowly drifting down",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 4.9,
+   "calls": 2,
+   "text": "The main issue this week is protein, with a moderate gap that grew as the days passed. Steps were just short of the goal, drifting further away, while calories landed close to target on about half the days. Protein intake was slightly under, a bit under a tenth off, and the gap widened throughout the week. Workouts remained steady with three sessions each day, and the connection between metrics shows that there's enough food but not enough protein, so a swap is needed rather than more food.\n\n1. Swap one of your evening meals for a high-protein alternative, like grilled chicken or a tofu stir-fry, to boost your protein intake without adding more food.  \n2. Add a 20-minute walk in the early evening, after your main meal, to help meet your step goal and support steady weight maintenance.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [495, 298]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H09 calories slightly over and protein low",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 7.9,
+   "calls": 3,
+   "text": "The main issue this week is protein, with a significant gap that's growing as the week progresses. Steps were holding steady, but calories landed close to the target only on a few days and are rising quickly. Protein was clearly under the goal, drifting further away, which puts muscle at risk. Workouts were light with just two sessions. The key connection is that there's enough food but not enough protein, so the fix is a swap rather than more food.\n\n1. Have a protein-rich snack, like grilled chicken or a scoop of whey protein, right after your morning coffee to boost intake early in the day. 2. Swap one of your evening meals for a high-protein alternative, such as a salmon and veggie bowl or a tofu stir-fry, to ensure you meet your target without adding extra food. 3. Keep steps and calories as they are, but focus on consistent protein intake throughout the day to protect muscle while dieting.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [453, 452]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: ['Keep steps and calories as they are, but focus on ']"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "H10 muscle gain overshooting",
+   "setup": "labels4_fast",
+   "repeat": 0,
+   "fingerprint": "693eb207bcfa",
+   "seconds": 3.8,
+   "calls": 2,
+   "text": "The main issue this week is calories, with a very large gap that adds far more fat than muscle. Steps were comfortably past the goal and held steady. Calories were miles over the target, drifting further as the week went on. Protein met the goal and continued to rise. Workouts were heavy with five sessions, and movement is fine, so the gap is entirely on the food side.\n\n1. Trim your dinner portions by half an hour before bedtime to reduce overall calorie intake without sacrificing satisfaction.  \n2. Skip your afternoon snack entirely, replacing it with a glass of water and a short walk to stay energized without adding extra calories.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "observations_use_words_not_digits",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [371, 268]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_cover_each_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "first_recommendation_takes_the_first_priority",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  }
+ ]
+}

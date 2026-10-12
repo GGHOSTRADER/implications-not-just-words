@@ -1,0 +1,24 @@
+﻿{
+    "model":  "mistral:7b",
+    "model_id":  "6577803aa9a0",
+    "ollama":  "ollama version is 0.34.4",
+    "started":  "2026-10-05 18:43:51",
+    "code":  "55227b6+uncommitted",
+    "repeats":  3,
+    "weekly":  [
+                   "split_fast",
+                   "labels_fast",
+                   "labels6_fast"
+               ],
+    "messages":  [
+                     "checkpoint_numbers",
+                     "checkpoint_labels3",
+                     "briefing_numbers",
+                     "briefing_labels_noguard",
+                     "briefing_labels4"
+                 ],
+    "chat":  [
+                 "numbers",
+                 "words"
+             ]
+}

@@ -1,0 +1,134 @@
+{
+ "meta": {
+  "checklist": "1.0",
+  "set": "tuning",
+  "repeats": 1,
+  "model": "qwen3:8b",
+  "fingerprints": {
+   "numbers": "37f1453ea7",
+   "words": "a9a31bdac8"
+  },
+  "started": "20261005_120725"
+ },
+ "results": [
+  {
+   "case": "01",
+   "set": "tuning",
+   "day": "late_over",
+   "kind": "status",
+   "question": "how am I doing today",
+   "setup": "numbers",
+   "repeat": 1,
+   "answer": "Steps: 11,571 (goal hit — +571 steps, +15 kcal bonus).  \nCalories remaining: 2769 → 2784 (adjusted for steps).  \nProtein: 130g target — check if you’re on track with tonight’s meal.  \n\nLate hour — need a light snack or winding down? Let me know what to do next. 🌙",
+   "seconds": 20.3,
+   "scores": {
+    "no_invented_figure": false,
+    "calm": true,
+    "no_claim_logged": true,
+    "short": true,
+    "no_dump": true,
+    "steps_are_walking": true,
+    "no_invented_workout": true,
+    "time_fits": false,
+    "calorie_truth": true,
+    "step_truth": true,
+    "answers_question": true,
+    "stale_noted": null
+   },
+   "passed": false,
+   "failed": [
+    "no_invented_figure",
+    "time_fits"
+   ],
+   "fingerprint": "37f1453ea7"
+  },
+  {
+   "case": "01",
+   "set": "tuning",
+   "day": "late_over",
+   "kind": "status",
+   "question": "how am I doing today",
+   "setup": "words",
+   "repeat": 1,
+   "answer": "You're doing great today — all your goals are reached. Steps, protein, and calories are all on target. Time to wrap up and rest!",
+   "seconds": 4.2,
+   "scores": {
+    "no_invented_figure": true,
+    "calm": true,
+    "no_claim_logged": true,
+    "short": true,
+    "no_dump": true,
+    "steps_are_walking": true,
+    "no_invented_workout": true,
+    "time_fits": true,
+    "calorie_truth": true,
+    "step_truth": true,
+    "answers_question": true,
+    "stale_noted": null
+   },
+   "passed": true,
+   "failed": [],
+   "fingerprint": "a9a31bdac8"
+  },
+  {
+   "case": "05",
+   "set": "tuning",
+   "day": "late_over",
+   "kind": "steps_help",
+   "question": "I'm behind on steps and it's raining, what can I do?",
+   "setup": "numbers",
+   "repeat": 1,
+   "answer": "Step status — Monday 23:33 | Current steps: 11,571 | Last updated: 20 min ago\n  12:00 → 1,100 steps | PASSED\n  15:00 → 2,750 steps | PASSED\n  19:00 → 4,400 steps | PASSED\n  23:59 → 11,000 steps | PASSED\nSummary: goal HIT — 11,571 steps, 571 over target, +15 kcal bonus.",
+   "seconds": 0.0,
+   "scores": {
+    "no_invented_figure": false,
+    "calm": true,
+    "no_claim_logged": true,
+    "short": true,
+    "no_dump": true,
+    "steps_are_walking": true,
+    "no_invented_workout": true,
+    "time_fits": true,
+    "calorie_truth": true,
+    "step_truth": true,
+    "answers_question": true,
+    "stale_noted": null
+   },
+   "passed": false,
+   "failed": [
+    "no_invented_figure"
+   ],
+   "fingerprint": "37f1453ea7"
+  },
+  {
+   "case": "05",
+   "set": "tuning",
+   "day": "late_over",
+   "kind": "steps_help",
+   "question": "I'm behind on steps and it's raining, what can I do?",
+   "setup": "words",
+   "repeat": 1,
+   "answer": "The facts say the goal is reached, so you’re actually on track. Since it’s raining, maybe a short walk indoors or a quick stretch could help.",
+   "seconds": 1.7,
+   "scores": {
+    "no_invented_figure": true,
+    "calm": true,
+    "no_claim_logged": true,
+    "short": true,
+    "no_dump": true,
+    "steps_are_walking": true,
+    "no_invented_workout": true,
+    "time_fits": false,
+    "calorie_truth": true,
+    "step_truth": true,
+    "answers_question": true,
+    "stale_noted": null
+   },
+   "passed": false,
+   "failed": [
+    "time_fits"
+   ],
+   "fingerprint": "a9a31bdac8"
+  }
+ ]
+}

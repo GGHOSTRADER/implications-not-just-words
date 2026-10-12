@@ -1,0 +1,98 @@
+{
+ "_readme": "Blind judgments of weekly reviews. Each judgment compares answers from saved result files (evals/results/, gitignored) week by week; sides were shuffled per week with a fixed seed and the key was opened only after every pick. `winners` maps each week to the setup whose answer was judged better. Used by evals/report.py for win rates and for the agreement between the automated semantic score and the judge.",
+ "judgments": [
+  {
+   "id": "J1",
+   "date": "2026-10-04 01:10",
+   "judge": "Claude Sonnet 5.5 (in-session)",
+   "case_set": "tuning",
+   "protocol": "blind pairwise A/B, shuffle seed 2026",
+   "criteria": "accuracy against the week's data, format, concreteness",
+   "answers": {
+    "split_fast": "weekly_20261004_0048.json",
+    "old_think": "weekly_20261004_0020.json"
+   },
+   "winners": {
+    "01 everything on target": "split_fast",
+    "02 steps slightly below": "split_fast",
+    "03 steps far below": "split_fast",
+    "04 protein slightly below": "split_fast",
+    "05 protein far below": "split_fast",
+    "06 steps and protein both below": "split_fast",
+    "07 calories well over target": "old_think",
+    "08 calories far under target": "old_think",
+    "09 steps met but very erratic": "split_fast",
+    "10 everything trending down": "old_think",
+    "11 everything trending up": "split_fast",
+    "12 muscle gain, protein met, calories short": "split_fast",
+    "13 maintenance, all within range": "split_fast",
+    "14 no workouts at all": "old_think",
+    "15 six workouts": "split_fast",
+    "16 no protein data this week": "old_think",
+    "17 steps exactly on goal": "split_fast",
+    "18 protein just above target": "old_think",
+    "19 calorie goal never hit": "old_think",
+    "20 calorie goal hit every day": "old_think"
+   }
+  },
+  {
+   "id": "J2",
+   "date": "2026-10-04 03:05",
+   "judge": "Claude Sonnet 5.5 (in-session)",
+   "case_set": "tuning",
+   "protocol": "blind three-way A/B/C, shuffle seed 99",
+   "criteria": "accuracy, right direction for each metric, concreteness, no invented links",
+   "answers": {
+    "labels_fast": "weekly_20261004_0300.json",
+    "split_fast": "weekly_20261004_0048.json",
+    "old_think": "weekly_20261004_0020.json"
+   },
+   "winners": {
+    "01 everything on target": "split_fast",
+    "02 steps slightly below": "labels_fast",
+    "03 steps far below": "labels_fast",
+    "04 protein slightly below": "labels_fast",
+    "05 protein far below": "labels_fast",
+    "06 steps and protein both below": "labels_fast",
+    "07 calories well over target": "labels_fast",
+    "08 calories far under target": "labels_fast",
+    "09 steps met but very erratic": "labels_fast",
+    "10 everything trending down": "old_think",
+    "11 everything trending up": "labels_fast",
+    "12 muscle gain, protein met, calories short": "labels_fast",
+    "13 maintenance, all within range": "split_fast",
+    "14 no workouts at all": "old_think",
+    "15 six workouts": "split_fast",
+    "16 no protein data this week": "labels_fast",
+    "17 steps exactly on goal": "labels_fast",
+    "18 protein just above target": "labels_fast",
+    "19 calorie goal never hit": "labels_fast",
+    "20 calorie goal hit every day": "labels_fast"
+   }
+  },
+  {
+   "id": "J3",
+   "date": "2026-10-04 03:30",
+   "judge": "Claude Opus 5.5 (in-session)",
+   "case_set": "holdout",
+   "protocol": "blind pairwise A/B, shuffle seed 5",
+   "criteria": "substance: right priority, right kind of fix, no invented links, no wrong facts",
+   "answers": {
+    "labels3_fast": "weekly_20261004_0324.json",
+    "labels_fast": "weekly_20261004_0313.json"
+   },
+   "winners": {
+    "H01 only calories a bit over": "labels3_fast",
+    "H02 steps far above, protein a bit low": "labels3_fast",
+    "H03 protein far above, steps short": "labels3_fast",
+    "H04 cutting too hard, nothing trained": "labels3_fast",
+    "H05 calories on average but erratic": "labels3_fast",
+    "H06 seven workouts, steps short, calories low": "labels3_fast",
+    "H07 no step data this week": "labels3_fast",
+    "H08 maintenance slowly drifting down": "labels3_fast",
+    "H09 calories slightly over and protein low": "labels3_fast",
+    "H10 muscle gain overshooting": "labels3_fast"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1873 @@
+{
+ "setups": {
+  "split_fast": "two questions, fast mode (the current design)"
+ },
+ "results": [
+  {
+   "case": "01 everything on target",
+   "setup": "split_fast",
+   "seconds": 11.4,
+   "calls": 3,
+   "text": "This week, average steps were 9300, slightly above the 9,000 target, while calories averaged 2490 kcal, close to the 2,500 kcal goal, and protein came in at 155g, exceeding the 150g target. The step count shows a steady increase each day, suggesting consistent activity, while calories and protein remain relatively stable, indicating good adherence to dietary goals. The higher protein intake may support muscle recovery from the four workouts this week, and the step trend could be linked to the evening peak activity around 18:00, possibly influencing overall energy expenditure and intake timing.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour around 18:00 and further boost step count.  \n2. Consume 20g of protein at breakfast to maintain the high protein intake and support muscle recovery from workouts.  \n3. Track caloric intake on days when calories are below 2490 kcal to ensure consistency with the 2,500 kcal target.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [600, 353]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "02 steps slightly below",
+   "setup": "split_fast",
+   "seconds": 8.3,
+   "calls": 3,
+   "text": "The average steps were 9100, below the 10,000 target, while calories averaged 2190 kcal, close to the 2200 target with slight daily increases. Protein averaged 150g, exceeding the 146g target. The step count shows a steady decline each day, suggesting possible reduced activity consistency, whereas calorie intake remained stable, possibly due to consistent eating patterns. Protein intake slightly increased daily, indicating better adherence to the target, which may correlate with workout frequency and dietary focus.\n\n1. Add a 20-minute walk after dinner to boost step count and help reach the 10,000-step target. 2. Consume protein at breakfast to maintain the current high protein intake and support muscle recovery from workouts. 3. Track calorie intake more closely on days with slight increases to ensure consistency and stay within the 2200 kcal target.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [520, 341]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "03 steps far below",
+   "setup": "split_fast",
+   "seconds": 8.8,
+   "calls": 3,
+   "text": "The average steps were 5200, below the 10,000 target, while calories averaged 2210 kcal, close to the 2200 target with a slight upward trend. Protein averaged 149g, exceeding the 146g target. The calorie stability shows a small daily increase, possibly linked to consistent eating patterns, while steps remained low and variable, suggesting less adherence to movement goals. The two workout days coincided with stable calorie intake, hinting at a possible connection between physical activity and dietary consistency.\n\n1. Do a 20-minute walk after dinner to boost steps, aiming for at least 5200 steps daily to close the gap from the target. 2. Consume 146g of protein at breakfast to meet the target without exceeding, using the average protein intake as a guide. 3. Track calorie intake consistently, aiming for 2200 kcal daily with a small upward trend, as seen in the data, to maintain stability.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [517, 381]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "04 protein slightly below",
+   "setup": "split_fast",
+   "seconds": 6.6,
+   "calls": 2,
+   "text": "The average steps were 10,400, meeting the 10,000 target, while protein averaged 132g, falling short of the 146g goal. Calories averaged 2150 kcal, slightly below the target but consistently close most days. The step count shows strong consistency with a positive daily trend, suggesting good adherence to movement goals, whereas protein intake dipped slightly each day, possibly linked to lower adherence to dietary targets. The calorie stability, despite a small daily decline, indicates consistent eating patterns, which may support fat loss efforts if protein intake can be improved.\n\n1. Add a protein shake at breakfast to boost morning protein intake, aiming for at least 30g per shake to help reach the 146g target.  \n2. Include a 20-minute walk after dinner to maintain the positive step trend and support calorie burn without overexertion.  \n3. Track protein intake using a food scale for 3 days to identify patterns and adjust meals accordingly, especially during lunch and dinner.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [587, 402]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "05 protein far below",
+   "setup": "split_fast",
+   "seconds": 9.1,
+   "calls": 3,
+   "text": "This week's average steps were 9400, meeting the 9,000 target, while protein averaged 96g, falling short of the 180g goal. Calories averaged 3040 kcal, consistently hitting the target within range. The step count shows steady improvement with a positive slope, suggesting good adherence to movement goals, whereas protein intake has a negative slope, hinting at possible inconsistency in dietary planning. The correlation between step stability and calorie consistency may indicate that structured activity supports better intake tracking, while protein remains a challenge.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour at 18:00 and maintain the positive step slope. 2. Consume 30g of protein at breakfast to boost the daily average and address the negative protein slope, aiming for at least 120g total by evening. 3. Track protein intake using the 5/7 workout days as a reference to ensure consistency, especially on non-workout days when the slope tends to drop.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": false,
+     "detail": "not in the data: [30.0]"
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [574, 418]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "06 steps and protein both below",
+   "setup": "split_fast",
+   "seconds": 9.0,
+   "calls": 3,
+   "text": "The average steps were 6400, below the 10,000 target, while average calories came in at 2480, slightly above the 2200 kcal goal. Protein averaged 101g, falling short of the 146g target. The calorie intake showed a slight upward trend, possibly linked to increased food intake on later days, while steps and protein both declined, suggesting lower adherence to activity and dietary goals. The negative slope in protein might indicate a pattern of underconsumption, potentially related to lower motivation or missed meals.\n\n1. Add a 20-minute walk after dinner to boost steps, aiming for at least 6400 steps daily as the current average. 2. Consume 101g of protein at breakfast to meet the weekly target of 146g, ensuring consistent intake throughout the day. 3. Track calorie intake to maintain the 2480 kcal average, avoiding the slight upward trend observed in the last days.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [520, 354]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "07 calories well over target",
+   "setup": "split_fast",
+   "seconds": 5.9,
+   "calls": 2,
+   "text": "The average steps were 10,200, meeting the 10,000 target, while calories averaged 2,650 kcal, slightly below the 2,000 kcal goal but within range on one day. Protein averaged 158g, exceeding the 150g target. The step count shows consistent performance with a steady increase each day, suggesting good adherence to movement goals. Calories and protein both show moderate variability, with protein remaining stable and steps improving over time, possibly indicating better consistency in diet and activity timing.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour at 18:00 and further boost daily steps. 2. Consume a protein-rich breakfast, aiming for at least 30g to maintain the high protein intake and support muscle recovery. 3. Focus on calorie tracking during lunch to ensure you meet the 2,000 kcal target more consistently, as only one day hit the goal within range.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [511, 383]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "08 calories far under target",
+   "setup": "split_fast",
+   "seconds": 8.7,
+   "calls": 3,
+   "text": "The average steps were 11,000, which met the 10,000 target, while calories averaged 1,620 kcal, falling short of the 2,400 kcal goal. Protein intake averaged 118g, significantly below the 150g target. The step count showed a steady increase each day, suggesting consistency, whereas calorie intake decreased daily, possibly linked to lower adherence or reduced food intake. The protein deficit may indicate a lack of prioritization in meal planning, especially with fewer workouts this week.\n\n1. Add a 20-minute walk after dinner to maintain the step count and support fat loss. 2. Consume 118g of protein at breakfast to meet the daily target, as protein intake was consistently below 150g. 3. Increase calorie intake by 40 kcal per day, aligning with the observed slope of -40 kcal/day to better meet the 2,400 kcal goal.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [491, 330]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "09 steps met but very erratic",
+   "setup": "split_fast",
+   "seconds": 6.4,
+   "calls": 2,
+   "text": "This week, average steps were 9600, which is 600 above the 9,000 target, indicating the step goal was met. Calories averaged 2410 kcal, slightly above the 2,400 target, showing consistent adherence. Protein intake averaged 146g, exceeding the 140g target by 6g, reflecting strong protein consumption. The positive slope in steps and calories suggests gradual improvement, while the stable protein intake may indicate consistent dietary habits. The correlation between higher steps and calorie intake could hint at a pattern of more active days leading to higher caloric consumption, though the protein stability remains unaffected by workout frequency.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour at 18:00 and maintain the positive step slope.  \n2. Continue consuming protein at breakfast to sustain the stable protein intake and ensure consistent dietary habits.  \n3. Track caloric intake on days with workouts to align with the caloric goal hit on 5/7 days and maintain the +2.0 kcal/day slope.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [652, 372]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "10 everything trending down",
+   "setup": "split_fast",
+   "seconds": 9.0,
+   "calls": 3,
+   "text": "Average steps were 8600, below the 10,000 target, while average calories came in at 2050 kcal, also below the 2200 kcal goal. Protein averaged 131g, falling short of the 146g target. The step count shows a steady decline each day, suggesting possible reduced activity or lower motivation, while calorie intake remains relatively stable despite the downward trend. Protein intake also shows a gradual decrease, which may indicate inconsistent dietary adherence, especially since the lower step and protein levels align with days when workouts were less frequent.\n\n1. Take a 20-minute walk after dinner to boost step count, aiming for at least 10,000 steps by increasing daily activity. 2. Consume 30g of protein at breakfast to meet the 146g target, ensuring consistent intake throughout the day. 3. Track protein intake more closely, especially on days with lower step counts, to align with the 131g average and avoid further decline.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": false,
+     "detail": "not in the data: [30.0]"
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [561, 371]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "11 everything trending up",
+   "setup": "split_fast",
+   "seconds": 8.9,
+   "calls": 3,
+   "text": "This week, average steps were 9800, which is 800 above the 9,000 target, indicating consistent activity. Calories averaged 2540 kcal, slightly above the 2,500 target, showing good adherence to intake. Protein averaged 157g, 7g over the 150g target, reflecting reliable dietary habits. The positive slope in steps and protein suggests gradual improvement, while calorie stability may relate to consistent meal timing. The high step count and protein intake align with the workout schedule, hinting at a strong connection between physical activity and nutrient consumption.\n\n1. Add a protein-rich snack, like a 200g chicken breast, to your lunch to maintain the high protein intake seen this week. 2. Incorporate a 20-minute walk after dinner to capitalize on the peak step hour at 18:00 and further boost step count. 3. Continue the current calorie intake pattern, as the slight surplus aligns with the workout schedule and supports maintenance phase goals.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": false,
+     "detail": "not in the data: [200.0]"
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [571, 383]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "12 muscle gain, protein met, calories short",
+   "setup": "split_fast",
+   "seconds": 8.2,
+   "calls": 3,
+   "text": "Average steps were 9200, slightly above the 9,000 target, showing consistent activity throughout the week. Calories averaged 2640 kcal, slightly below the target, with a slight daily decline, suggesting possible variability in food intake. Protein averaged 176g, exceeding the 170g target, indicating good adherence to the dietary plan. The stable protein intake alongside consistent steps may suggest a strong routine, while the slight drop in calories could hint at potential fluctuations in meal timing or portion control.\n\n1. Consume a protein-rich snack or meal at breakfast to maintain the high protein intake seen throughout the week. 2. Track calorie intake more consistently, especially in the later days, to address the slight daily decline and ensure closer alignment with the 3,100 kcal target. 3. Review and adjust portion sizes for meals around the 2640 kcal average to help stabilize calorie intake and prevent the daily decline.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [525, 417]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "13 maintenance, all within range",
+   "setup": "split_fast",
+   "seconds": 5.7,
+   "calls": 2,
+   "text": "This week, average steps were 8150, slightly above the 8,000 target, with a steady increase each day. Calories averaged 2310, very close to the 2,300 target, showing consistent intake without significant fluctuations. Protein averaged 133g, exceeding the 130g goal, indicating good adherence to the dietary plan. The stable calorie and protein levels suggest strong consistency in eating habits, while the gradual step increase may reflect improved daily activity, possibly influenced by the three workout sessions.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour at 18:00 and further boost daily steps. 2. Continue consuming protein at breakfast to maintain the exceeded protein target and support muscle recovery from workouts. 3. Keep the current calorie intake consistent throughout the day to sustain the stable pattern and avoid fluctuations.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [515, 357]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": false,
+     "detail": "no concrete action in: ['Keep the current calorie intake consistent through']"
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "14 no workouts at all",
+   "setup": "split_fast",
+   "seconds": 5.8,
+   "calls": 2,
+   "text": "The average steps were 9900, slightly below the 10,000 target, while calories averaged 2180 kcal, slightly under the 2200 kcal goal. Protein came in at 149g, exceeding the 146g target. The step count shows a steady increase each day, suggesting consistent movement, but calories dipped slightly over the week, possibly linked to lower activity or dietary adjustments. Protein remained stable, indicating good adherence to the target, even though steps and calories were slightly off.\n\n1. Do a 20-minute walk after dinner to boost steps and help meet the 10,000-step target.  \n2. Add a protein shake or snack at breakfast to maintain the 149g protein intake and support fat loss.  \n3. Track calorie intake more closely on days when calories dipped below 2200, aiming to stay within +/-10 kcal of the target.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [483, 321]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "15 six workouts",
+   "setup": "split_fast",
+   "seconds": 6.4,
+   "calls": 2,
+   "text": "Average steps were 9700, slightly above the 9,000 target, showing consistent adherence to the goal. Calories averaged 3010 kcal, meeting the target range with a steady increase each day, suggesting stable intake. Protein averaged 172g, exceeding the 170g target, indicating good adherence to the dietary plan. The positive slope in protein and calories suggests a growing habit, while the high step count and low variability in steps point to consistent daily activity. The correlation between higher steps and stable calorie intake may hint at a pattern of active days supporting consistent nutrition.\n\n1. Add a 20-minute walk after dinner to capitalize on the peak step hour of 18:00 and further boost daily steps.  \n2. Continue consuming protein at breakfast to maintain the 172g average and support muscle gain, as it's already exceeding the target.  \n3. Track calorie intake on days with higher steps to ensure it stays within the 3010 kcal range and supports the positive slope trend.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [602, 386]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "16 no protein data this week",
+   "setup": "split_fast",
+   "seconds": 8.1,
+   "calls": 3,
+   "text": "The average steps this week were 9200, slightly below the 10,000 target, while average calories consumed were 2250, meeting the 2200 kcal goal. Protein intake isn't explicitly provided, but the caloric stability suggests consistent eating habits. The step count shows a downward trend, possibly linked to lower activity during the day, while calorie intake remained steady, indicating good adherence to dietary goals. The workout schedule may contribute to the step deficit, as fewer active days could impact overall movement.\n\n1. Take a 20-minute walk after dinner to boost step count, aiming for an additional 500 steps daily to meet the 10,000-step target. 2. Consume 146g of protein at breakfast to align with the protein target, using the same amount each day to maintain consistency. 3. Schedule a short 10-minute mobility session after each workout to improve recovery and maintain activity levels throughout the week.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": false,
+     "detail": "not in the data: [500.0]"
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "no_claims_without_data",
+     "ok": false,
+     "detail": "talks about protein as if measured: \"Protein intake isn't explicitly provided, but the caloric stability suggests consistent\""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [526, 397]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": false,
+     "detail": "maintain consistency"
+    }
+   ]
+  },
+  {
+   "case": "17 steps exactly on goal",
+   "setup": "split_fast",
+   "seconds": 8.9,
+   "calls": 3,
+   "text": "The average steps were 10,000, meeting the target exactly, while calories averaged 2200 kcal, also hitting the goal consistently. Protein intake averaged 140g, slightly below the target of 146g. The stability in steps and calories suggests good adherence to the plan, but the slight decline in protein may indicate a need to focus on dietary consistency. The three workout days align with the stable calorie intake, suggesting that physical activity might be supporting overall energy balance, though protein intake remains a point of concern.\n\n1. Add a protein-rich snack, like a Greek yogurt or a protein bar, to your afternoon snack time to boost intake closer to the 146g target.  \n2. Include a 20-minute walk during your peak step hour (18:00) to maintain step consistency and support calorie burn.  \n3. Review your protein sources at dinner and ensure you're including lean meats, eggs, or plant-based options to meet the target without exceeding calorie goals.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [543, 422]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": false,
+     "detail": "focus on"
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "18 protein just above target",
+   "setup": "split_fast",
+   "seconds": 8.3,
+   "calls": 3,
+   "text": "The average steps were 7800, below the 10,000 target, while calories averaged 2230 kcal, close to the 2200 target with a slight upward trend. Protein averaged 148g, exceeding the 146g target. The calorie stability shows a small daily increase, possibly linked to consistent eating patterns, while steps remain lower, suggesting less overall activity. The protein intake being met might indicate good adherence to dietary goals, but steps could benefit from more consistent movement throughout the day.\n\n1. Add a 20-minute walk after dinner to boost steps, aiming to close the 2200-step gap by increasing daily activity. 2. Continue eating protein at breakfast to maintain the 148g average, which already meets the 146g target. 3. Track calorie intake consistently to sustain the +5 kcal/day trend, ensuring it stays within the 2200 kcal target range.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [501, 347]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "19 calorie goal never hit",
+   "setup": "split_fast",
+   "seconds": 6.2,
+   "calls": 2,
+   "text": "The average steps were 10,100, meeting the 10,000 target, while calories averaged 2,410 kcal, slightly below the 2,200 kcal goal, and protein averaged 150g, exceeding the 146g target. Steps showed a steady increase each day, suggesting consistent activity, but calories fluctuated more, possibly due to varying meal timing or intake adherence. Protein remained stable, indicating good dietary consistency, though calorie stability could be linked to workout frequency, as days with workouts saw more controlled intake.\n\n1. Add a 20-minute walk after dinner to boost calorie burn on days with lower activity, aligning with the peak step hour of 18:00.  \n2. Consume a protein-rich breakfast, such as 30g of protein, to maintain the stable protein intake and support muscle recovery.  \n3. Track calorie intake more closely on non-workout days, aiming for 2,200 kcal, to improve consistency and meet the caloric goal.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [518, 393]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "case": "20 calorie goal hit every day",
+   "setup": "split_fast",
+   "seconds": 5.1,
+   "calls": 2,
+   "text": "The average steps were 8900, below the 10,000 target, while calories averaged 2205 kcal, hitting the target every day. Protein averaged 151g, exceeding the 146g target. The stable calorie intake suggests consistency in diet, possibly linked to the daily caloric goal being met. The slight increase in protein over the week might indicate better adherence to the target, even though steps remained below. The steady calorie intake could also reflect a balanced approach to nutrition, supporting the fat loss phase.\n\n1. Do a 20-minute walk after dinner to boost steps toward the 10,000 target.  \n2. Add 5g of protein to breakfast to maintain the exceeded protein intake.  \n3. Track steps during the peak hour of 18:00 to ensure consistency in step count.",
+   "items": [
+    {
+     "kind": "hallucination",
+     "id": "no_invented_numbers",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "hallucination",
+     "id": "respects_target_status",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "two_paragraphs",
+     "ok": true,
+     "detail": "2 paragraphs"
+    },
+    {
+     "kind": "instruction",
+     "id": "no_markdown",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_label_or_heading",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_greeting",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "no_sign_off",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "about_four_lines_each",
+     "ok": true,
+     "detail": "lengths [513, 237]"
+    },
+    {
+     "kind": "instruction",
+     "id": "observations_hold_no_advice",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "instruction",
+     "id": "one_to_three_numbered_recommendations",
+     "ok": true,
+     "detail": "found [1, 2, 3]"
+    },
+    {
+     "kind": "coverage",
+     "id": "observations_restate_each_average",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "coverage",
+     "id": "recommendations_address_every_off_target_metric",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "every_recommendation_is_concrete",
+     "ok": true,
+     "detail": ""
+    },
+    {
+     "kind": "specificity",
+     "id": "no_filler_phrases",
+     "ok": true,
+     "detail": ""
+    }
+   ]
+  }
+ ]
+}

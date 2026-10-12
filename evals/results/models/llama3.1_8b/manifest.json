@@ -1,0 +1,24 @@
+﻿{
+    "model":  "llama3.1:8b",
+    "model_id":  "46e0c10c039e",
+    "ollama":  "ollama version is 0.34.4",
+    "started":  "2026-10-05 19:47:10",
+    "code":  "55227b6+uncommitted",
+    "repeats":  3,
+    "weekly":  [
+                   "split_fast",
+                   "labels_fast",
+                   "labels6_fast"
+               ],
+    "messages":  [
+                     "checkpoint_numbers",
+                     "checkpoint_labels3",
+                     "briefing_numbers",
+                     "briefing_labels_noguard",
+                     "briefing_labels4"
+                 ],
+    "chat":  [
+                 "numbers",
+                 "words"
+             ]
+}
