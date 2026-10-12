@@ -49,6 +49,17 @@ def test_the_weekly_headline_numbers_of_the_paper():
     assert share == {"split_fast": (30, 3), "labels6_fast": (30, 87), "matched6_fast": (30, 63)}
 
 
+def test_the_lean_chat_agent_writes_the_same_facts_as_the_application_did():
+    """evals/chat_facts_reference.json holds the facts text the application's chat path wrote for each of the 66 chat
+    cases. The lean agent must reproduce it word for word, so a model sees the same prompt in both."""
+    from evals import chat_cases as cc, run_chat_lean
+    reference = json.loads((ROOT / "evals" / "chat_facts_reference.json").read_text(encoding="utf-8"))
+    assert len(reference) == len(cc.CASES) == 66
+    for case_id, day_name, question, _kind, _set in cc.CASES:
+        _inp, facts = run_chat_lean.facts_for(cc.DAYS[day_name], day_name, question)
+        assert facts == reference[case_id], case_id
+
+
 def test_the_checklists_accept_a_good_answer_and_reject_an_invented_figure():
     from evals import weekly_cases, weekly_rubric
     name, data = sorted(weekly_cases.CASES.items())[0]

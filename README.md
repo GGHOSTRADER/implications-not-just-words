@@ -49,7 +49,16 @@ Needs [Ollama](https://github.com/ollama/ollama) with `qwen3:8b` (the saved runs
 ```
 python -m evals.run_weekly_eval  --setups split_fast,labels6_fast,matched6_fast --set holdout --repeats 3
 python -m evals.run_message_eval --setups checkpoint_numbers,checkpoint_labels3 --set holdout --repeats 3
+python -m evals.run_chat_lean    --set fresh2 --repeats 1
 ```
+
+`evals/run_chat_lean.py` is a small chat agent written for this release. For a fake day and a question it does what the
+paper's words design does: write the day's facts in words (`chat_facts.py`), make one call to the model, check the answer
+and redraft at most twice, tidy it, and score it with the chat checklist. It has no tools, no graph and no database. The
+calorie target of each fake day comes from `evals/chat_targets.json`, because the application's step-bonus rule is not
+released. `tests/test_release.py` checks that the facts it writes equal, word for word, the facts the application's chat
+wrote for all 66 chat cases. On the `fresh2` set (20 cases) it passed 18 answers at its first run, against 54 of 60 in
+the paper.
 
 Answers are sampled, so a new run will not equal the saved one word for word; compare shares and intervals, not text.
 The report pools only runs whose fingerprint equals the current code's.
@@ -60,10 +69,11 @@ The report pools only runs whose fingerprint equals the current code's.
   database, scheduler, decision engine, other features) is not. The evaluation reaches into it in a few places, and
   `agent.py`, `llm_registry.py` and `background_checks.py` replace those: the first two keep only the answer cleaner and
   the local model settings, the third keeps the 22 functions the evaluation calls. Nothing was rewritten.
-- **Chat generation.** The chat answers in `evals/results/` were produced through the application's agent graph, which is
-  not released, so chat answers cannot be regenerated here. The saved answers, the cases (`evals/chat_cases.py`), the
-  checklist (`evals/chat_rubric.py`) and the chat design (`chat_facts.py`) are included, so the chat scores can be
-  recomputed. The chat code is the version of 5 October 2026 that the paper evaluates; the application has changed since.
+- **The application's chat agent and the original chat design.** The saved chat answers in `evals/results/` were produced
+  through the application's agent graph, which is not released. Instead this folder has a lean chat agent
+  (`evals/run_chat_lean.py`, see below) that runs the paper's words design on the same cases. The original design (raw
+  figures through tools) cannot be rerun here; its saved answers are included and scored with the same checklist. The chat
+  code is the version of 5 October 2026 that the paper evaluates; the application has changed since.
 - **Human ratings.** The six raters' answers and comments are not released (the paper reports aggregates only). The kit
   builder is in `evals/human_rating.py`.
 - **Later work** on the workout matrix and exercise knowledge, which is not part of this paper.

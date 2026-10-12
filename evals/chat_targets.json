@@ -1,0 +1,62 @@
+{
+ "late_over": {
+  "cal_target": 2784,
+  "bonus_kcal": 15
+ },
+ "afternoon_behind": {
+  "cal_target": 2783,
+  "bonus_kcal": -240
+ },
+ "evening_room": {
+  "cal_target": 2400,
+  "bonus_kcal": -67
+ },
+ "morning_start": {
+  "cal_target": 2300,
+  "bonus_kcal": -277
+ },
+ "midday_on_track": {
+  "cal_target": 2200,
+  "bonus_kcal": -173
+ },
+ "night_under": {
+  "cal_target": 2200,
+  "bonus_kcal": -107
+ },
+ "stale_steps": {
+  "cal_target": 2300,
+  "bonus_kcal": -253
+ },
+ "lunch_low": {
+  "cal_target": 2000,
+  "bonus_kcal": -187
+ },
+ "evening_over": {
+  "cal_target": 2600,
+  "bonus_kcal": -187
+ },
+ "stale_evening": {
+  "cal_target": 2300,
+  "bonus_kcal": -53
+ },
+ "early_hungry": {
+  "cal_target": 1900,
+  "bonus_kcal": -256
+ },
+ "midmorning_ahead": {
+  "cal_target": 2800,
+  "bonus_kcal": -253
+ },
+ "afternoon_stale": {
+  "cal_target": 2100,
+  "bonus_kcal": -160
+ },
+ "evening_perfect": {
+  "cal_target": 2211,
+  "bonus_kcal": 11
+ },
+ "post_goal_morning": {
+  "cal_target": 2140,
+  "bonus_kcal": 40
+ }
+}
