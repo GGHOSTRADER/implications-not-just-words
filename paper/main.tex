@@ -854,6 +854,25 @@ messages: recall is not measured by a checklist its authors wrote.
 7.4 to 5.2\,s for the weekly review and about 4 to 2\,s for the checkpoint. The briefing became 0.7--0.8\,s slower;
 its answers were about 20 words longer.
 
+\paragraph{Why the raters did not see the accuracy gain.} The checklists and the raters disagree: the checklists show
+large gains, the raters found no clear preference and mostly chose ``equal'' or split on accuracy. A lack of ground truth
+does not explain it, because every rater saw the day's figures above each pair of messages and was asked which message was
+more accurate about them. Two other explanations fit what we have, and we did not test either. The errors the checklists
+count are small and sit inside fluent text (a misread comparison, an invented figure, advice of the wrong kind), so a
+rater who reads two plausible messages may not check each figure. And the two versions differ more in length, tone and
+wording than in accuracy, and the raters' comments and preferences were about those (shorter messages, a positive tone,
+context before advice), with little agreement between raters. A study that points raters at the facts and asks them to
+find the error would separate the two. Until then the checklists measure what the raters did not notice, and the
+human result says nothing about whether the accuracy gain matters to a user.
+
+\paragraph{Are the answer checks worth it?} It depends on the message. For the checkpoint comment the checks added
+almost nothing once the labels were in place (97\% to 100\% of held-out answers), and we would leave them out where
+latency matters. For the morning briefing they mattered: 83\% to 97\% with labels v3 and 90\% to 100\% with v4, because
+they stopped the two failures users would notice, an outdoor walk on a day with unknown weather and a closing pep line,
+at about 0.2\,s per answer on average and with 10--37\% of answers redrafted (one extra model call each). We would keep
+them for the briefing. The checks are deterministic and cheap; the cost is the redraft call. We did not ablate the weekly
+review's checks, so we make no claim for it.
+
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Limitations}
 \label{sec:limitations}
