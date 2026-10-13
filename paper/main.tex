@@ -912,9 +912,14 @@ training focus, a phase and an injury mean for the day. It uses the same princip
 It is not evaluated here, and we leave it to later work.
 
 \section*{Code and Data Availability}
-Code, the 90 synthetic cases, all saved answers, the checklists and the report generator will be released at
-[repository address to be added before submission]. The human ratings are not released; only the counts in
-Table~\ref{tab:human} are.
+The code, the synthetic cases (90 for the weekly review, checkpoint comment and briefing, 66 for the chat), all saved
+answers, the checklists and the report generator are available at
+\url{https://github.com/GGHOSTRADER/implications-not-just-words}. The code is under the PolyForm Noncommercial License
+1.0.0; the cases, answers and report are under CC BY 4.0. The repository recomputes every table from the saved answers
+and checks, through the stored version fingerprints, that its code is the code that produced them. The weekly, checkpoint
+and briefing answers can be regenerated with a local Ollama, and a small chat agent reruns the chat design. The
+application's own chat agent, which produced the saved chat answers, and the human ratings are not released; only the
+counts in Table~\ref{tab:human} are.
 
 \section*{Use of AI Assistance}
 An AI assistant (Claude, Anthropic) helped write the labelers, the checklists, the analysis code and the text of this
