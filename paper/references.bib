@@ -3,6 +3,9 @@
 % Lost in the Middle (TACL vol. 12, 2024, pp. 157-173), Qwen3 (first author An Yang), page ranges added where confirmed.
 % NOT confirmed against a page and left as given: the Ollama and llama.cpp "year" fields (software), and the page range of
 % Spithourakis and Riedel. Entries with "and others" were shortened on purpose rather than risk a wrong author list.
+% Second check 2026-11-26: fixed the author order of Thawani et al. and a missing author in Toolformer (both had passed
+% the first check), added Reiter 2007 and Cheng et al. 2026. Dropped the xVal workshop note (sources disagree on which
+% workshop). Kept Ji et al. "Article 248": seen only in a search summary of a library record, not on the ACM page.
 
 @inproceedings{spithourakis2018numeracy,
   title     = {Numeracy for Language Models: Evaluating and Improving their Ability to Predict Numbers},
@@ -12,7 +15,7 @@
 }
 
 @inproceedings{wallace2019numbers,
-  title     = {Do {NLP} Models Know Numbers? Probing Numeracy in Embeddings},
+  title     = {Do {NLP} Models Know Numbers? {Probing} Numeracy in Embeddings},
   author    = {Wallace, Eric and Wang, Yizhong and Li, Sujian and Singh, Sameer and Gardner, Matt},
   booktitle = {Proceedings of EMNLP-IJCNLP},
   year      = {2019}
@@ -20,7 +23,7 @@
 
 @inproceedings{thawani2021representing,
   title     = {Representing Numbers in {NLP}: a Survey and a Vision},
-  author    = {Thawani, Avijit and Pujara, Jay and Szekely, Pedro A. and Ilievski, Filip},
+  author    = {Thawani, Avijit and Pujara, Jay and Ilievski, Filip and Szekely, Pedro A.},
   booktitle = {Proceedings of NAACL-HLT},
   year      = {2021}
 }
@@ -43,7 +46,6 @@
   title   = {{xVal}: A Continuous Numerical Tokenization for Scientific Language Models},
   author  = {Golkar, Siavash and Pettee, Mariel and Eickenberg, Michael and Bietti, Alberto and Cranmer, Miles and Krawezik, Geraud and Lanusse, Francois and McCabe, Michael and Ohana, Ruben and Parker, Liam and R{\'e}galdo-Saint Blancard, Bruno and Tesileanu, Tiberiu and Cho, Kyunghyun and Ho, Shirley},
   journal = {arXiv preprint arXiv:2310.02989},
-  note    = {Accepted at the NeurIPS Workshop on ML for the Physical Sciences, 2023},
   year    = {2023}
 }
 
@@ -165,7 +167,7 @@
 }
 
 @misc{ollama,
-  key          = {Ollama},
+  author       = {{Ollama}},
   title        = {Ollama},
   howpublished = {\url{https://github.com/ollama/ollama}},
   note         = {Software},
@@ -219,14 +221,29 @@
 
 @inproceedings{schick2023toolformer,
   title     = {Toolformer: Language Models Can Teach Themselves to Use Tools},
-  author    = {Schick, Timo and Dwivedi-Yu, Jane and Dess{\`\i}, Roberto and Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas},
+  author    = {Schick, Timo and Dwivedi-Yu, Jane and Dess{\`\i}, Roberto and Raileanu, Roberta and Lomeli, Maria and Hambro, Eric and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   note      = {arXiv:2302.04761},
   year      = {2023}
 }
 
+@inproceedings{reiter2007architecture,
+  title     = {An Architecture for Data-to-Text Systems},
+  author    = {Reiter, Ehud},
+  booktitle = {Proceedings of the Eleventh {E}uropean Workshop on Natural Language Generation ({ENLG} 07)},
+  pages     = {97--104},
+  year      = {2007}
+}
+
+@article{cheng2026thinkfast,
+  title   = {Think Fast, Talk Smart: Partitioning Deterministic and Neural Computation for Structured Health Text Generation},
+  author  = {Cheng, Kai-Chen and Han, Haejun and Sun, David Q.},
+  journal = {arXiv preprint arXiv:2605.29652},
+  year    = {2026}
+}
+
 @inproceedings{sclar2024quantifying,
-  title     = {Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting},
+  title     = {Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How {I} learned to start worrying about prompt formatting},
   author    = {Sclar, Melanie and Choi, Yejin and Tsvetkov, Yulia and Suhr, Alane},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2024}

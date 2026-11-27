@@ -34,7 +34,7 @@ plan, so that the model only writes the sentences. In a deployed fitness assista
 on 30 synthetic cases per message type (20 for tuning, 10 held out), scored by a frozen checklist whose precision we
 check by reading its flags. On held-out weeks the share of answers passing every check rose from 3\% to 87\%
 (Wilcoxon $p=0.002$), at 5.2\,s per review against 39.6\,s for the original thinking-mode prompt. The advice became
-correct only when code supplied the implications, priorities and plan; adding the figures back to that design kept the
+correct only when code supplied the implications and priorities; adding the figures back to the final design kept the
 advice correct but brought invented figures back (63\% of answers passing every check). The approach transferred to checkpoint comments (33\% to 100\%) and
 morning briefings (37\% to 100\%), improved the pass rate on three other model families in eight of nine comparisons,
 and on a conversational agent passed 90--92\% of answers on two fresh case sets against 15--21\%. A deployed message
@@ -62,11 +62,12 @@ followed by ``Rest day is okay'' on training days.
 
 We evaluate one remedy, \emph{label engineering}. Deterministic code computes everything the message depends on:
 each comparison, its size, its consequence for the user's goal, the priority order, the kind of fix and the plan of
-the answer. It passes these to the model as short sentences without digits. The model's role reduces to surface
-realization, the final stage of the classic natural language generation (NLG) pipeline \citep{reiter2000building}.
-Pipelines of this kind are established in data-to-text generation; what we add is a stepwise measurement, in a small,
-4-bit quantized model deployed on consumer hardware, of which layer of verbalized information removes which class of
-error, and of the errors that each layer introduces. We ask:
+the answer. It passes these to the model as short sentences without digits. The model's role reduces to wording the
+answer (microplanning and realization), the final stage of the classic natural language generation (NLG) and
+data-to-text pipelines \citep{reiter2000building,reiter2007architecture}. Designs in which code analyzes and a model
+writes are established, recently also for health text \citep{cheng2026thinkfast}; what we add is a stepwise
+measurement, in a small, 4-bit quantized model deployed on consumer hardware, of what each added layer of verbalized
+information changes, and of the errors that it introduces. We ask:
 \begin{itemize}
 \item[\textbf{RQ1}] Which layers of the representation (verbal verdicts, implications, priorities, answer structure)
 change factual errors, the correctness of the advice and adherence to the format?
@@ -81,9 +82,9 @@ accuracy that the checklists measure?
 \paragraph{Contributions.}
 \begin{itemize}
 \item A controlled sequence of eight representations of the same weekly data, from raw numbers to labels with
-implications and a code-decided plan, evaluated on held-out cases (\S\ref{sec:res-weekly}). Verbal verdicts reduce
-hallucination; the correctness of the advice changes only when code supplies the implications; format failures follow
-the structure of the prompt.
+implications and a code-decided plan, evaluated on held-out cases (\S\ref{sec:res-weekly}). Replacing the figures
+with verbal verdicts reduces hallucination, while adding verdicts beside the figures did little; the correctness of
+the advice changes only when code supplies the implications; format failures follow the structure of the prompt.
 \item A replication on two further messages with an ablation of answer checks (\S\ref{sec:res-messages}), including a
 revision that improved the tuning set and degraded the held-out set.
 \item Model-free measures of a representation, notably \emph{verdict coverage} (the share of decisions a message needs
@@ -104,35 +105,50 @@ reading its flags; version fingerprints so that only identical configurations ar
 \section{Related Work}
 \label{sec:related}
 
-\paragraph{Numeracy in language models.} Language models represent and manipulate numbers unreliably
-\citep{spithourakis2018numeracy,wallace2019numbers,thawani2021representing}. Arithmetic accuracy depends on the
-surface form of numbers and on tokenization \citep{nogueira2021investigating,singh2024tokenization}, which has
-motivated dedicated number encodings \citep{golkar2023xval}. We leave the model unchanged and remove numeric
+\paragraph{Numeracy in language models.} How well language models handle numbers depends on how the numbers are
+represented: standard embeddings encode magnitude within the training range but extrapolate poorly
+\citep{wallace2019numbers}, and treating numbers like ordinary words or subwords is a limited representation
+\citep{spithourakis2018numeracy,thawani2021representing}. Arithmetic accuracy depends on the surface form of numbers
+and on tokenization \citep{nogueira2021investigating,singh2024tokenization}, which has motivated dedicated number
+encodings \citep{golkar2023xval}. We leave the model unchanged and remove numeric
 reasoning from inference instead.
 
 \paragraph{Data-to-text generation.} Pipeline NLG separates content determination and document planning from
 realization \citep{reiter2000building,gatt2018survey}. End-to-end neural data-to-text systems hallucinate and omit
 facts \citep{wiseman2017challenges}; explicit content selection and planning reduce both
-\citep{puduppully2019data}. \citet{kasner2022neural} verbalize data items with templates and let pretrained models
-fuse and rephrase them. Label engineering applies such a pipeline to prompting a general-purpose SLM: control is
+\citep{puduppully2019data}. \citet{reiter2007architecture} extends the pipeline to raw input data by placing signal
+analysis and data interpretation stages before document planning. \citet{kasner2022neural} verbalize data items with
+templates and let pretrained models fuse and rephrase them. Label engineering applies such a pipeline, with code
+performing the analysis, interpretation and planning, to prompting a general-purpose SLM: control is
 exercised through the content of the prompt rather than through decoding constraints, and the document plan is itself
 expressed in text.
 
 \paragraph{Offloading computation to code.} Program-aided and tool-using models delegate arithmetic to an interpreter or a
-calculator \citep{gao2023pal,schick2023toolformer}. There the model still decides what to compute and how to phrase it; in label
+calculator \citep{gao2023pal,schick2023toolformer}. There the model still decides what to compute; in label
 engineering the computation, the comparison and the plan are fixed in advance by code and the model receives only their verbal
 result. We did not run a program-aided or tool-using baseline (Section~\ref{sec:limitations}).
 
-\paragraph{Numbers as words for language models.} The closest work we found is \citet{caut2025wordalisations}, who generate
-natural-language narratives from numerical data with LLMs through engineered prompt templates (``wordalisations'') and evaluate
-them in three domains, with LLM and human judges. We differ in the target (short advice messages tied to a user's goal), in
-the model (a 4-bit 8B model run locally), and in the measurement: a stepwise comparison of layers of verbalized information
-on held-out cases, with the errors each layer introduces. Prompt formatting changes model behavior substantially
+\paragraph{Code analyzes, the model writes.} \citet{cheng2026thinkfast} generate sleep-health text with
+deterministic code that performs the recurring analysis before a single bounded writer call, and replace one
+analytical layer at a time with model output, over 280 user-nights and six models. They conclude that code should own
+recurring analysis and that models should express verified facts within bounded interfaces. We share that design
+principle. Their writer is given fixed numeric comparisons, and they leave human evaluation to future work; our model,
+a 4-bit 8B model run locally, is given short sentences without digits, we vary what it is shown, layer by layer, and
+we report a blind human comparison.
+
+\paragraph{Numbers as words for language models.} In \citet{caut2025wordalisations}, code converts numerical data
+into verbal descriptions that avoid specific numbers, using templates and no language model, and a model writes
+narratives from them (``wordalisations''). Across three application domains, an LLM judge found inaccuracies in 18\%
+of cases with these descriptions, against 50\% with raw statistics and 91\% with no data; their human raters saw no
+significant difference between the verbal and the statistical input in faithfulness or usefulness, and found the
+verbal version more engaging. Our lower hallucination without figures and our near-even human ratings are consistent
+with these findings. We differ in the target (short advice messages tied to a user's goal), in the model (a 4-bit 8B
+model run locally), and in the measurement: a stepwise comparison of layers of verbalized information on held-out
+cases, with the errors each layer introduces. Prompt formatting changes model behavior substantially
 \citep{sclar2024quantifying}, which is consistent with, but does not explain, our findings. The term ``label engineering''
 here means writing the verbal descriptions of the data; it is unrelated to the label words (verbalizers) of prompt-based
-classification. \citet{arai2025evaluating} evaluate how well LLMs understand numerical time series when generating text
-from them; we instead remove that step from the model, and test with an ablation (A9) what is left once the digits
-are put back.
+classification. \citet{arai2025evaluating} benchmark how well LLMs interpret numerical time series; we instead remove
+that interpretation step from the model, and test with an ablation (A9) what changes once the digits are put back.
 
 \paragraph{Language models for personal health.} Wearable data have been given to LLMs by fine-tuning on sensor summaries
 \citep{cosentino2024personal}, by prompt enhancement for health prediction \citep{kim2024healthllm} and through agents that write
@@ -146,10 +162,11 @@ verbalized.
 
 \paragraph{Evaluation and correction.} Our checklist follows behavioral testing \citep{ribeiro2020checklist} and
 verifiable instruction checks \citep{zhou2023ifeval}. Our answer checks give the model external, deterministic
-feedback and one redraft, unlike self-refinement \citep{madaan2023selfrefine}; models struggle to correct their
-reasoning without such feedback \citep{huang2024cannot}. We use an LLM judge only as a secondary signal, given the
-known biases of LLM judges \citep{zheng2023judging}. Chain-of-thought prompting \citep{wei2022chain} and thinking
-modes \citep{qwen3} trade latency for reasoning; we compare against one such configuration.
+feedback and one redraft, unlike self-refinement \citep{madaan2023selfrefine}. \citet{huang2024cannot} find that
+when a model gets no outside signal, revising its own reasoning is unreliable and can make its answers worse. We use an LLM judge only as a secondary signal, given the
+known biases of LLM judges \citep{zheng2023judging}. Chain-of-thought prompting \citep{wei2022chain} improves
+reasoning through intermediate steps, and thinking modes trade latency for performance \citep{qwen3}; we compare
+against one such configuration.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{System, Task and Data}
@@ -213,7 +230,7 @@ Figure~\ref{fig:pipeline} shows the pipeline and Figure~\ref{fig:example} one we
 \node[box=21mm] (data) {Tracked data\\targets, logs,\\schedule, weather};
 \node[box=25mm, right=4mm of data, fill=gray!12] (lab) {Deterministic labeler\\verdicts, implications,\\priorities, fix kinds,\\answer plan};
 \node[box=19mm, right=4mm of lab] (view) {Verbal view\\(no digits)};
-\node[box=19mm, below=7mm of view] (slm) {qwen3:8b, 4-bit\\surface\\realization};
+\node[box=19mm, below=7mm of view] (slm) {qwen3:8b, 4-bit\\wording\\the answer};
 \node[box=25mm, left=4mm of slm, fill=gray!12] (chk) {Deterministic checks\\(optional)};
 \node[box=21mm, left=4mm of chk] (out) {Message};
 \draw[arr] (data) -- (lab);
@@ -223,8 +240,8 @@ Figure~\ref{fig:pipeline} shows the pipeline and Figure~\ref{fig:example} one we
 \draw[arr] (chk) -- (out);
 \draw[arr, dashed] (chk.south) -- ++(0,-3.5mm) -| node[pos=0.25, below, font=\tiny] {problems found: one redraft} (slm.south);
 \end{tikzpicture}}
-\caption{Label engineering. Code performs content determination and document planning; the SLM performs surface
-realization. Answer checks are optional and evaluated by ablation.}
+\caption{Label engineering. Code performs content determination and document planning; the SLM performs
+microplanning and realization. Answer checks are optional and evaluated by ablation.}
 \label{fig:pipeline}
 \end{figure}
 
@@ -529,7 +546,7 @@ against A1 is $+0.091$ (10 better, $p=0.002$). A9 is also slower than A7 (6.3 ag
 (50\% against 33\%). A figure that is in the data can still be used wrongly, and the checklist passes it: for a week
 with an average of 96\,g of protein against a 180\,g target, one answer advised a dinner swap ``to boost intake by around
 96\,g'' and a snack ``to add another 96\,g'', using the average as the amount to add, twice.
-Two separate effects follow: code-supplied implications, priorities and plan make the advice correct and the format
+Two separate effects follow: code-supplied implications and priorities make the advice correct, and the plan the format
 right, with or without the digits, and the digits are what bring the factual errors back.
 
 \paragraph{Implications fix the advice (RQ1).} Adding sizes, directions and a ``keep as is'' list (A3) raised the
@@ -818,15 +835,16 @@ read the table only as: no clear preference was found, with a lead on the weekly
 \emph{Offloaded comparisons.} The numeric prompts left a third (weekly), 58\% (checkpoint) and 29\% (briefing) of the
 needed verdicts implicit. In non-thinking mode, single-pass generation has to compute each implicit comparison
 while decoding the sentence that states it, and the calorie sign error occurred on the one weekly metric without a
-precomputed verdict. Prior work links such failures to how numbers are segmented and represented
-\citep{nogueira2021investigating,singh2024tokenization,thawani2021representing}. We did not isolate tokenizer or
+precomputed verdict. Prior work links errors in arithmetic \citep{nogueira2021investigating,singh2024tokenization}
+and limits in numeracy more broadly \citep{thawani2021representing} to how numbers are segmented and represented; we
+did not test whether this explains our comparison errors. We did not isolate tokenizer or
 quantization effects; cl100k\_base counts in this paper are a length proxy only.
 \emph{Multi-step implications.} Moving from a verdict to advice takes several steps: comparison, direction,
 phase-dependent valence (under-eating is acceptable in a fat-loss phase and a problem in a gain phase), priority and
 kind of fix. Verdicts supply the first step; the advice became correct only when code supplied the remaining steps
 (17\% to 97\%). Putting the figures back next to those steps (A9) left the advice correct and brought back invented
-figures, so the two effects separate: the implications and the plan make the advice right, the digits are the source of
-the factual errors. Thinking mode recovered part of this chain (53\%) at five times the latency.
+figures, so the two effects separate: the implications and priorities make the advice right, the digits are the source
+of the factual errors. Thinking mode recovered part of this chain (53\%) at five times the latency.
 \emph{Prompt defects.} The baseline checkpoint prompt contained statements false as worded, and the model repeated
 them. Verdict coverage and a truth audit of the prompt locate such defects without running a model.
 \emph{Copying.} The model realizes what its context contains: instruction lists, numbered topics, internal codes,
